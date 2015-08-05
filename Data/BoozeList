@@ -1,8 +1,8 @@
 [
-    {name: "guinness"},
-    {name: "Miller"},
-    {name: "Miller Light"},
-    {name: "Miller Chili Lime"},
-    {name: "White Russian"},
-    {name: "Kamikazee"}
+    {"name": "guinness", "id":1},
+    {"name": "Miller", "id":2},
+    {"name": "Miller Light", "id":3},
+    {"name": "Miller Chili Lime", "id":4},
+    {"name": "White Russian", "id":5},
+    {"name": "Kamikazee", "id":6}
   ]

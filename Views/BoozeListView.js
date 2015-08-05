@@ -20,20 +20,19 @@ var BoozeListview = Backbone.View.extend({
 		});
 	},
 
-
 	render: function(){
 		// rendering the list template to the page prior to the actual list
 		this.$el.append(this.template());
 
-
+		// make an aemtpy cotainer to cache the id
 		var $listContainer = this.$el.find('#boozelist');
 
 		// each iterates through each of the models > Collection > Data
 		this.collection.each(function(model){
 
-			// passing in model data into the Itemview
-			var item = new BoozeItemView({'model':model});
-			item.$el.appendTo($listContainer);
+			// passing in model data into the Itemview boozeItem is the booze item vw model
+			var boozeItem = new BoozeItemView({'model':model});
+			boozeItem.$el.appendTo($listContainer);
 		});
 	},
 
